@@ -77,5 +77,6 @@ int main()
 }
 ~~~
 ## OUTPUT-
+![](https://github.com/SunidhiChoubey/pointers/commit/7db144e2418295179099ec9dbc59db687dfaeb58)
 ## CONCLUSION-
-learnt basics of pointers
+Learnt basics of pointers
