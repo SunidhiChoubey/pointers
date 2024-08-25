@@ -179,7 +179,7 @@ int main()
 
 Outputs:
 ![](https://github.com/SunidhiChoubey/pointers/blob/main/Screenshot%202024-08-26%20013326.png)
-![](
+![](https://github.com/SunidhiChoubey/pointers/blob/main/Screenshot%202024-08-26%20013413.png)
 
 
 
