@@ -162,7 +162,7 @@ int main()
 {
     int a,b;
     int *pa, *pb;
-    cout<<"Using call by value: "<<endl;
+    cout<<"Using call by reference: "<<endl;
     cout<<"Enter a number: ";
     cin>>a;
     pa = &a;
@@ -179,7 +179,7 @@ int main()
 
 Outputs:
 ![](https://github.com/SunidhiChoubey/pointers/blob/main/Screenshot%202024-08-26%20013326.png)
-![]()
+![](https://github.com/SunidhiChoubey/pointers/blob/main/Screenshot%202024-08-26%20014549.png)
 
 
 
