@@ -184,7 +184,6 @@ Outputs:
 
 
 Conclusion:
-→ We learnt about call by value and call by reference in C++.
-→ We learnt the use case of each in C++.
+We learnt about call by value and call by reference in C++ and We learnt the use case of each in C++.
 
 
