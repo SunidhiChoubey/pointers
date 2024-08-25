@@ -80,3 +80,110 @@ int main()
 ![](https://github.com/SunidhiChoubey/pointers/commit/7db144e2418295179099ec9dbc59db687dfaeb58)
 ## CONCLUSION-
 Learnt basics of pointers
+
+#EXPERIMENT-10
+## AIM-To study and implement Pointer Operations (call by value and call by reference)
+
+## Theory:
+Call by Value:
+What It Does: Passes a copy of the variable’s value to the function.
+Effect: Changes made inside the function do not affect the original variable.
+Usage: Safe for cases where you don't want the original data to be altered.
+Call by Reference:
+What It Does: Passes the reference (or address) of the variable to the function.
+Effect: Changes made inside the function directly affect the original variable.
+Usage: Useful when you need to modify the original data or when working with large data structures to avoid copying.
+There are two ways to call a variable to a function for various operations.
+Difference
+|Call by Value | Call by Reference| |
+|----------|----------|----------|
+| A method of passing arguments to a function where the actual value is passed |A method of passing arguments where the address of the variable is passed is called call by reference | 
+|Does not affect the original variable | Does affect the original variable| 
+| More memory is used because a copy of the actual value is made | Less memory is used because only the address is passed. | 
+ |Used when the function does not need to modify the original data. | Used when the function needs to modify the original data or when passing large objects. |
+## Code:
+~~~
+
+a.
+
+#include <iostream>
+using namespace std;
+
+//call by value
+int a,b;
+void swap (int a, int b)
+{
+    int sw;
+    sw = a;
+    a = b;
+    b = sw;
+    cout<<"Swapped Values: "<<endl;
+    cout<<"a: "<<a<<endl;
+    cout<<"b: "<<b<<endl;
+}
+
+int main()
+{
+    int a,b;
+    cout<<"Using call by value: "<<endl;
+    cout<<"Enter a number: ";
+    cin>>a;
+    cout<<"Enter another number: ";
+    cin>>b;
+    cout<<"User Values: "<<endl;
+    cout<<"a: "<<a<<endl;
+    cout<<"b: "<<b<<endl;
+    swap(a,b);
+    
+}
+~~~
+B.
+~~~
+#include <iostream>
+using namespace std;
+
+//call by value
+int a,b;
+int *pa, *pb;
+void swapr (int *pa, int *pb)
+{
+    int *psw;
+    int sw;
+    psw = &sw;
+    *psw = *pa;
+    *pa = *pb;
+    *pb = *psw;
+    cout<<"Swapped Values: "<<endl;
+    cout<<"a: "<<*pa<<endl;
+    cout<<"b: "<<*pb<<endl;
+}
+
+int main()
+{
+    int a,b;
+    int *pa, *pb;
+    cout<<"Using call by value: "<<endl;
+    cout<<"Enter a number: ";
+    cin>>a;
+    pa = &a;
+    cout<<"Enter another number: ";
+    cin>>b;
+    pb = &b;
+    cout<<"User Values: "<<endl;
+    cout<<"a: "<<a<<endl;
+    cout<<"b: "<<b<<endl;
+    swapr(pa,pb);
+    
+}
+~~~
+
+Outputs:
+
+
+
+
+Conclusion:
+→ We learnt about call by value and call by reference in C++.
+→ We learnt the use case of each in C++.
+
+
