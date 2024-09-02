@@ -81,7 +81,7 @@ int main()
 ## CONCLUSION-
 Learnt basics of pointers
 
-#EXPERIMENT-10
+# EXPERIMENT-10
 ## AIM-To study and implement Pointer Operations (call by value and call by reference)
 
 ## Theory:
